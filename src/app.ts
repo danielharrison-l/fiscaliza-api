@@ -5,7 +5,7 @@ import timelineData from './data/timeline.json';
 
 export async function buildApp() {
   const app = Fastify({
-    logger: true
+    logger: false
   });
 
   await app.register(cors, {
